@@ -1,0 +1,57 @@
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#c7c16f, #fffb00)
+
+}
+
+.title{
+    font-size: 85px;
+    color: #030125;
+    animation: fliptitle 15s;
+}
+
+@keyframes fliptitle {
+    from{
+        transform: rotateX(80deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.container{
+    background-color: rgba(255,255,255, 0.2);
+    padding: 19px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 9px;
+    box-shadow: 1px 3px 8px rgba(0,0,0, 0.5);
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 2;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 7px;
+}
+
+.containerInput :placeholder{
+    color: #f1f1f1;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 3s;
+}
